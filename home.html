@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Bazaar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #183147;
+    color: #ffffff;
+}
+
+header {
+    background-color: #080C25;
+    padding: 10px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    height: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav .search-cart {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-cart input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 100px;
+    width: 250px;
+}
+
+nav .search-cart {
+    margin-left: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 0px 65px;
+}
+
+.banner {
+    background-color: #0D1F39;
+    height: 230px;
+    border-radius: 25px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    padding-top: 55px;
+    margin: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.featured-products {
+    text-align: left;
+    margin-left: 55px;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    padding-right: 55px;
+}
+
+.product {
+    background-color: #1f79ff;
+    margin: 15px;
+    margin-bottom: 30px;
+    width: 320px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 320px;
+    height: 361px;
+    object-fit: fill;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+.product span {
+    font-size: 20px;
+    color: #06b0ca;
+    text-align: left;
+    display: block;
+    padding-left: 135px;
+}
+
+footer {
+    background-color: #172B4D;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: #080C25;
+    width: 800px;
+    text-align: left;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-description {
+    max-width: 600px;
+}
+
+.big-logo {
+    margin-left: 30px;
+}
+
+.big-logo img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="LOGO.png" alt="Beauty Bazaar Logo">
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>SHOP</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <button class="cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="banner">
+                <h1>BEAUTY BAZAAR</h1>
+                <p>Discover your perfect look, Anytime, Anywhere.</p>
+            </div>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="lipstick.jpg" alt="Nude Lipstick">
+                    <p>Nude Lipstick</p> 
+                    <span>300 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="red lipstick.png" alt="Red Lipstick">
+                    <p>Red Lipstick</p>
+                    <span>250 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="eyeshadow.jpg" alt="Eye Pallet">
+                    <p>Eye Pallet</p>
+                    <span>210 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="mascara.jpg" alt="Eye Mascara">
+                    <p>Eye Mascara</p>
+                    <span>180 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="matte foundation.jpg" alt="Matte Foundation">
+                    <p>Matte Foundation</p>
+                    <span>350 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="concealer.jpg" alt="Concealer">
+                    <p>Concealer</p>
+                    <span>270 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="foundation.jpg" alt="Pressed Foundation">
+                    <p>Pressed Foundation</p>
+                    <span>330 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="eyebrow pencil.jpg" alt="Eyebrow Pencil">
+                    <p>Eyebrow Pencil</p>
+                    <span>160 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="lipbalm.jpg" alt="Lip Balm">
+                    <p>Lip Balm</p>
+                    <span>180 ₽</span>
+                </div>
+                <div class="product">
+                    <img src="sunscreen.jpg" alt="Sunscreen">
+                    <p>Sunscreen</p>
+                    <span>220 ₽</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Contact Info</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <div class="about-us">
+                <div class="about-description">
+                    <h1><strong>ABOUT US</strong></h1>
+                    <p>Beauty Bazaar is your one-stop shop for all things beauty! We offer a wide range of high-quality makeup, skincare, and haircare products to help you look and feel your most radiant. Whether you're a beauty buff or just starting out, we're passionate about helping you discover the perfect products for your unique needs.</p>
+                </div>
+                <div class="big-logo">
+                    <img src="LOGO.png" alt="Beauty Bazaar Logo" class="fancy">
+                </div>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>facebook: Beautybzr | X: Beautybzr_ | insta: Beautybzr | Phone: 2097-287-8765</p>
+        </div>
+    </footer>    
+</body>
+</html>
